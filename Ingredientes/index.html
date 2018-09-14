@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+
+		<main>
+
+    Nome
+    <br>
+    <input type="text" id="nome"></input> <label class="erro" id="erro-nome"></label>
+    <br>
+    Idade
+    <br>
+    <input type="text" id="idade"></input> <label class="erro" id="erro-idade"></label>
+    <br>
+    <input type="radio" id="tam" name="tamanho" value="p"></input> Peq
+    <input type="radio" id="tam" name="tamanho" value="m"></input> Med
+    <input type="radio" id="tam" name="tamanho" value="g"></input> Grande <label class="erro" id="erro-tamanho"></label>
+    <br>
+    Nº ingredientes
+    <select onchange="selecionar(this.value)">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <br>
+    <table>
+        <tr>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);'  name="ovo" value="ovo">ovo</input>
+            </th>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="queijo" value="ovo">queijo</input>
+            </th>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="milho" value="ovo">milho</input>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="bacon" value="ovo">bacon</input>
+            </th>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="presunto" value="ovo">presunto</input>
+            </th>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="ervilha" value="ovo">ervilha</input>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="azeitona" value="ovo">azeitona</input>
+            </th>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="cogumelo" value="ovo">cogumelo</input>
+            </th>
+            <th>
+                <input type="checkbox" onclick='handleClick(this);' name="cebola" value="ovo">cebola</input>
+            </th>
+        </tr>
+    </table>
+
+    <button id="enviar">Enviar</button>
+
+
+			<script src="js/validacao.js"></script>
+
+		</main>
+
+	</body>
+</html>
